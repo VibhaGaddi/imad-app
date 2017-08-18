@@ -64,11 +64,9 @@ var html Template = `}
                 
             </html>
 `;
-return html Template;
-
+        return html Template ;
 }
 
-                             
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
