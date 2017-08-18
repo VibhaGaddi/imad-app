@@ -6,10 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content = {
+var articleOne = {
   title:'Article One | Vibha Gaddi',
   heading:'Article One',
   date:'August 17 2017',
+  content:` <p>
+                This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
+            </p>
+            <p>
+                This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
+            </p>
+            <p>
+                This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
+            </p>`
 };
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'index.html'));
